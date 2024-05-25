@@ -127,7 +127,7 @@ async def getmedia(bot, update):
             reply_markup=reply_markup
         )
         return
-    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @arena_movies"
+    text=f"**Link :-** `https://telegra.org{response[0]}`\n\n**Join :-** @arena_movies"
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton(text="Open Link", url=f"https://telegra.org{response[0]}"),
