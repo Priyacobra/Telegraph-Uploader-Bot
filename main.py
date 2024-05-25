@@ -19,7 +19,7 @@ FayasNoushad = Client(
 START_TEXT = """
 Hello {}, I am an under 5MB media or file to telegra.ph link uploader bot.
 
-Made by @FayasNoushad
+Made by @Don_Vijay
 """
 HELP_TEXT = """
 - Just give me a media under 5MB
@@ -130,8 +130,8 @@ async def getmedia(bot, update):
     text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @arena_movies"
     reply_markup=InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
-        InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
+        InlineKeyboardButton(text="Open Link", url=f"https://telegra.org{response[0]}"),
+        InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.org{response[0]}")
         ],[
         InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/arena_movies")
         ]]
