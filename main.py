@@ -17,7 +17,7 @@ FayasNoushad = Client(
 )
 
 START_TEXT = """
-Hello {}, I am an under 5MB media or file to telegra.ph link uploader bot.
+Hello {}, I am an under 5MB media or file to telegra.org link uploader bot.
 
 Made by @Don_Vijay
 """
@@ -98,7 +98,7 @@ async def start(bot, update):
 
 @FayasNoushad.on_message(filters.private & filters.media)
 async def getmedia(bot, update):
-    medianame = "./DOWNLOADS/" + str(update.from_user.id) + "/FayasNoushad/FnTelegraphBot"
+    medianame = "./DOWNLOADS/" + str(update.from_user.id) + "/Don_Vijay/Don_pro_leech_bot"
     try:
         message = await update.reply_message(
             text="`Processing...`",
