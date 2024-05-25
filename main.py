@@ -124,7 +124,7 @@ async def getmedia(bot, update):
         await message.edit_text(
             text=text,
             disable_web_page_preview=True,
-            reply_markup=reply_markup
+            reply_markup=None
         )
         return
     text=f"**Link :-** `https://telegra.org{response[0]}`\n\n**Join :-** @arena_movies"
@@ -139,7 +139,7 @@ async def getmedia(bot, update):
     await message.edit_text(
         text=text,
         disable_web_page_preview=True,
-        reply_markup=reply_markup
+        reply_markup=None
     )
 
 FayasNoushad.run()
