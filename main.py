@@ -30,9 +30,9 @@ Made by @FayasNoushad
 """
 ABOUT_TEXT = """
 - **Bot :** `Telegraph Uploader`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot)
+- **Creator :** [Fayas](https://telegram.me/Don_Vijay)
+- **Channel :** [Fayas Noushad](https://telegram.me/Arena_Movies)
+- **Source :** [Click here](https://telegram.me/arena_movies)
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
@@ -53,8 +53,8 @@ HELP_BUTTONS = InlineKeyboardMarkup(
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('Channel', url='https://telegram.me/arena_movies'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/Don_Vijay')
         ],[
         InlineKeyboardButton('Home', callback_data='home'),
         InlineKeyboardButton('Help', callback_data='help'),
@@ -127,13 +127,13 @@ async def getmedia(bot, update):
             reply_markup=reply_markup
         )
         return
-    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @FayasNoushad"
+    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @arena_movies"
     reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
         InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
         ],[
-        InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/FayasNoushad")
+        InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/arena_movies")
         ]]
     )
     await message.edit_text(
